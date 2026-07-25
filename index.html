@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexvora Tattoo & Piercing Studio | Jubilee Hills, Hyderabad</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-color: #0b0c10;
+      --card-bg: #1f2833;
+      --accent-color: #66fcf1;
+      --text-main: #ffffff;
+      --text-muted: #c5c6c7;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Oswald', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+
+    /* HEADER / NAVBAR */
+    header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px 5%;
+      background: rgba(11, 12, 16, 0.95);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid #222;
+    }
+
+    .logo {
+      font-size: 26px;
+      font-weight: 700;
+      color: var(--accent-color);
+      letter-spacing: 2px;
+    }
+
+    /* HERO SECTION */
+    .hero {
+      position: relative;
+      text-align: center;
+      padding: 90px 20px;
+      background: linear-gradient(rgba(11, 12, 16, 0.75), rgba(11, 12, 16, 0.95)), url('Hero-Section.jpg');
+      background-size: cover;
+      background-position: center;
+      min-height: 65vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      color: #fff;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: var(--text-muted);
+      max-width: 650px;
+    }
+
+    /* SECTION CONTAINERS */
+    .container {
+      padding: 60px 5%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 32px;
+      color: var(--accent-color);
+      margin-bottom: 10px;
+    }
+
+    .section-subtitle {
+      text-align: center;
+      color: var(--text-muted);
+      margin-bottom: 40px;
+    }
+
+    /* IMAGE DISPLAY CARDS */
+    .image-card {
+      background: var(--card-bg);
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid #333;
+      margin-bottom: 40px;
+    }
+
+    .image-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* AUTOMATIC 5-SECOND REVIEW SLIDER */
+    .slider-container {
+      position: relative;
+      max-width: 700px;
+      margin: 0 auto;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid #333;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+    }
+
+    .slide {
+      display: none;
+      width: 100%;
+    }
+
+    .slide img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .slide.active {
+      display: block;
+      animation: fadeIn 0.8s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0.4; }
+      to { opacity: 1; }
+    }
+
+    /* LOCATION & FOOTER */
+    .location-box {
+      background: var(--card-bg);
+      border-radius: 16px;
+      padding: 35px 25px;
+      border: 1px solid #333;
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      border-top: 1px solid #222;
+      color: var(--text-muted);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <div class="logo">NEXVORA TATTOO</div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <h1>CRAFTSMANSHIP MEETS ARTISTRY</h1>
+    <p>Hyderabad’s premier custom tattoo studio in Jubilee Hills. Fine-line, realism, cover-ups & sterile body piercing.</p>
+  </section>
+
+  <div class="container">
+
+    <!-- SERVICES SECTION -->
+    <h2 class="section-title">OUR SPECIALIZATIONS</h2>
+    <p class="section-subtitle">Custom Sleeves • Realism • Cover-Ups • Piercings</p>
+    <div class="image-card">
+      <img src="tattoo-services.png" alt="Nexvora Tattoo Services">
+    </div>
+
+    <!-- GALLERY SECTION -->
+    <h2 class="section-title">STUDIO GALLERY</h2>
+    <p class="section-subtitle">Explore recent artwork engineered for skin</p>
+    <div class="image-card">
+      <img src="tattoo-gallery.png" alt="Nexvora Tattoo Portfolio Gallery">
+    </div>
+
+    <!-- ARTISTS SECTION -->
+    <h2 class="section-title">MEET OUR MASTER ARTISTS</h2>
+    <p class="section-subtitle">10+ Years of combined precision ink experience</p>
+    <div class="image-card">
+      <img src="tattoo-artists.png" alt="Nexvora Studio Lead Artists">
+    </div>
+
+    <!-- 5-SECOND AUTOMATIC REVIEW SLIDER -->
+    <h2 class="section-title">VERIFIED GOOGLE REVIEWS</h2>
+    <p class="section-subtitle">5.0 ★★★★★ Rating in Jubilee Hills, Hyderabad</p>
+
+    <div class="slider-container">
+      <div class="slide active">
+        <img src="tattoo-review-1.png" alt="Client Review Rahul Verma">
+      </div>
+      <div class="slide">
+        <img src="tattoo-review-2.png" alt="Client Review Ananya Reddy">
+      </div>
+      <div class="slide">
+        <img src="tattoo-review-3.png" alt="Client Review Karthik Raju">
+      </div>
+    </div>
+
+    <!-- LOCATION & DETAILS -->
+    <div style="margin-top: 60px;">
+      <h2 class="section-title">STUDIO LOCATION</h2>
+      <p class="section-subtitle">Visit our sterile, luxury tattoo space</p>
+
+      <div class="location-box">
+        <h3 style="color: var(--accent-color); font-size: 22px; margin-bottom: 12px;">NEXVORA TATTOO & PIERCING STUDIO</h3>
+        <p style="margin-bottom: 10px; font-size: 16px;">📍 Plot No. 42, Road No. 36, Jubilee Hills, Hyderabad, Telangana 500033</p>
+        <p style="margin-bottom: 10px; font-size: 16px;">⏰ Tue – Sun: 11:00 AM – 9:00 PM (Monday Closed)</p>
+        <p style="font-size: 16px;">🛡️ 100% Single-Use Sterilized Needles | Hospital-Grade Autoclave</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Nexvora Tattoo Studio. All Rights Reserved. Built for Demo Showcase.</p>
+  </footer>
+
+  <!-- AUTOMATIC 5-SECOND SLIDER JAVASCRIPT -->
+  <script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+
+    function showNextSlide() {
+      slides[currentSlide].classList.remove('active');
+      currentSlide = (currentSlide + 1) % slides.length;
+      slides[currentSlide].classList.add('active');
+    }
+
+    setInterval(showNextSlide, 5000);
+  </script>
+
+</body>
+</html>
